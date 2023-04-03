@@ -4,12 +4,14 @@ import { Home } from "./components/Home";
 import { ProductList } from './components/ProductList';
 import { ProductDetail } from './components/ProductDetail';
 import { Contact } from './components/Contact';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 function App() {
   return (
     <div className="App">
-      <header>Header</header>
+      <Header/>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,7 +20,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Routes>
       </main>
-      <footer>Footer</footer>
+      <Footer/>
     </div>
   );
 }
