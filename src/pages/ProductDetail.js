@@ -7,8 +7,8 @@ export const ProductDetail = () => {
 
 
   return (
-  <div className="component">
-            ProductDetail {params.id}
-  </div>
+    <main>
+        <div className="component">ProductDetail {params.id}</div>
+    </main>
   )
 }
