@@ -7,6 +7,7 @@ import { Contact } from './components/Contact';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Admin } from './components/Admin';
+import { PageNotFound } from "./components/PageNotFound";
 
 function App() {
   const user = true;
@@ -22,6 +23,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="/dipesh" element={<Navigate to="/" />} />
           <Route path="/admin" element={ user ? <Admin /> : <Navigate to="/" />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </main>
       <Footer/>
